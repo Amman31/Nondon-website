@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arduino LED Control</title>
+    <style>
+        .button {
+            padding: 20px;
+            font-size: 20px;
+            margin: 10px;
+        }
+        .on-button {
+            background-color: green;
+            color: white;
+        }
+        .off-button {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Control Arduino LED</h1>
+    <button class="button on-button" onclick="toggleLED('H')">Turn LED On</button>
+    <button class="button off-button" onclick="toggleLED('L')">Turn LED Off</button>
+
+    <script>
+        function toggleLED(state) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "http://192.168.0.20/" + state, true);
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>

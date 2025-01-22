@@ -1,0 +1,89 @@
+.gallery-root {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 6px;
+    row-gap: 2px;
+}
+
+.gallery-main h1 {
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+.gallery-div {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 2%;
+    cursor: pointer;
+}
+
+.gallery-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery-div:hover {
+    filter: brightness(0.5);
+}
+
+.imagePopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupImage {
+    position: fixed;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    transition: color 0.1s ease;
+}
+
+.closeButton:hover {
+    color: red;
+}
+
+@media screen and (max-width: 500px) {
+    .gallery-root {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-main {
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .gallery-div {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .gallery-div {
+        width: 130px;
+        height: 130px;
+    }
+}

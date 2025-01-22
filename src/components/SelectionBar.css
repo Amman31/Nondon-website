@@ -1,0 +1,59 @@
+.skills-list {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    background-color: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 10px;
+    transition: all .9s;
+}
+
+.skill-list-item {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2em;
+    height: 55px;
+    width: 150px;
+    transition: all 0.3s;
+    cursor: pointer;
+    list-style: none;
+    color: aliceblue;
+    z-index: 4;
+}
+
+.skill-list-item:hover {
+    background-color: rgba(161, 161, 161, 0.162);
+}
+
+.skill-selector {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 55px;
+    width: 150px;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    background: linear-gradient(90deg, rgba(255, 213, 0, 0.732), rgba(255, 145, 0, 0.499));
+    opacity: 0.8;
+    transition: left 0.5s;
+}
+
+@media screen and (max-width: 500px) {
+    .skill-list-item {
+        height: 60px;
+        width: 130px;
+        font-size: 0.9rem;
+    }
+
+    .skill-selector {
+        height: 60px;
+        width: 130px;
+    }
+}

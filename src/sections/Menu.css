@@ -1,0 +1,120 @@
+.menu-root {
+    min-height: 100vh;
+    background-image: url('../assets/menubackground.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.menu-root h1 {
+    margin: 0;
+    color: rgb(209, 212, 214);
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid orange;
+}
+
+.buffet-menu {
+    padding-left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 95vw;
+    padding: 50px 0px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.buffet-menu h2 {
+    text-align: center;
+    color: rgb(224, 157, 23);
+    font-size: 2.3rem;
+    margin: 0;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buffet-menu h3 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buffet-menu p {
+    margin: 0;
+    color: crimson;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.buffet-menu li {
+    color: rgb(212, 216, 220);
+    margin-left: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.buffet-menu li:hover {
+    color: rgb(224, 157, 23);
+}
+
+.alacarte {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.alacarte-menu {
+    box-shadow: 0px 0px 100px black;
+    margin-bottom: 10px;
+    height: 800px;
+    background-color: aliceblue;
+}
+
+.alacarte-menu img {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .menu-root h1 {
+        font-size: 2rem;
+    }
+
+    .alacarte {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .buffet-menu h2 {
+        font-size: 2rem;
+    }
+
+    .buffet-menu li {
+        font-size: 1.6rem;
+    }
+}

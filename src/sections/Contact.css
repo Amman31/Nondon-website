@@ -1,0 +1,24 @@
+.contact-root {
+    min-height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 18, 21);
+}
+
+.contact-root h1 {
+    font-family: "Merienda", sans-serif;
+    color: aliceblue;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+.contact-root p {
+    font-family: "Poppins", sans-serif;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

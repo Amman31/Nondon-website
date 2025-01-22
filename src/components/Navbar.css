@@ -1,0 +1,151 @@
+.navbar-root {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.551);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+}
+
+.navbar-root ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    font-size: 1.1rem;
+    list-style: none;
+    letter-spacing: 0.1em;
+    color: rgb(221, 217, 207);
+}
+
+.navbar-root li {
+    transition: all 0.1s ease;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: crimson;
+    }
+
+    50% {
+        background-color: rgb(35, 141, 19);
+    }
+
+    100% {
+        background-color: rgb(19, 98, 177);
+    }
+}
+
+.offers {
+    padding: 5px 10px;
+    border-radius: 20px;
+    animation: colorChange 1s infinite alternate;
+}
+
+.navbar-root li:hover {
+    color: rgb(245, 189, 78);
+    cursor: pointer;
+}
+
+.navbar-root button {
+    border: none;
+    color: aliceblue;
+    padding: 12px 30px;
+    background-color: rgb(185, 124, 10);
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    font-family: 'Poppins';
+    border-radius: 30px;
+}
+
+.nav-buttons {
+    text-decoration: none;
+}
+
+.nav-logo {
+    width: 140px;
+    padding-top: 10px;
+}
+
+.nav-logo img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-float-mobile {
+    position: fixed;
+    z-index: 9999;
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    background-color: rgba(24, 24, 24, 0.388);
+    border: 1px solid rgba(255, 255, 255, .08);
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    transition: 0.3s ease;
+    bottom: 0px;
+    height: 80px;
+}
+
+.navbar-float-mobile ul {
+    font-size: 1rem;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 0px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.navbar-float-mobile .navbar-list-elements {
+    transition: 0.3s ease;
+}
+
+.navbar-float-mobile .navbar-list-elements:hover {
+    color: rgb(154, 154, 156);
+}
+
+.navbar-list-elements-m {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23px;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.navbar-list-elements-m p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 0.09em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar-list-elements-m:active {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-list-elements-m {
+        transform: scale(0.8);
+    }
+}
+
+a {
+    text-decoration: none;
+}
